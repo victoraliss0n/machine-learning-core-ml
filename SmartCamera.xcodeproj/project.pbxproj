@@ -13,6 +13,9 @@
 		DAB596D51FD96A410058B27D /* SmartCamera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAB596D31FD96A410058B27D /* SmartCamera.xcdatamodeld */; };
 		DAB596D71FD96A410058B27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB596D61FD96A410058B27D /* Assets.xcassets */; };
 		DAB596DA1FD96A410058B27D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB596D81FD96A410058B27D /* LaunchScreen.storyboard */; };
+		DAB596E21FD97F350058B27D /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DAB596E11FD97F350058B27D /* MNISTClassifier.mlmodel */; };
+		DAB596E41FD97F450058B27D /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DAB596E31FD97F440058B27D /* SqueezeNet.mlmodel */; };
+		DAB596E61FD98F3E0058B27D /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DAB596E51FD98F3D0058B27D /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DAB596D61FD96A410058B27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB596D91FD96A410058B27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB596DB1FD96A410058B27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB596E11FD97F350058B27D /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNISTClassifier.mlmodel; sourceTree = "<group>"; };
+		DAB596E31FD97F440058B27D /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		DAB596E51FD98F3D0058B27D /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				DAB596CC1FD96A410058B27D /* AppDelegate.swift */,
 				DAB596CE1FD96A410058B27D /* ViewController.swift */,
 				DAB596D01FD96A410058B27D /* Main.storyboard */,
+				DAB596E11FD97F350058B27D /* MNISTClassifier.mlmodel */,
+				DAB596E51FD98F3D0058B27D /* Resnet50.mlmodel */,
+				DAB596E31FD97F440058B27D /* SqueezeNet.mlmodel */,
 				DAB596D61FD96A410058B27D /* Assets.xcassets */,
 				DAB596D81FD96A410058B27D /* LaunchScreen.storyboard */,
 				DAB596DB1FD96A410058B27D /* Info.plist */,
@@ -141,7 +150,10 @@
 			files = (
 				DAB596D51FD96A410058B27D /* SmartCamera.xcdatamodeld in Sources */,
 				DAB596CF1FD96A410058B27D /* ViewController.swift in Sources */,
+				DAB596E41FD97F450058B27D /* SqueezeNet.mlmodel in Sources */,
 				DAB596CD1FD96A410058B27D /* AppDelegate.swift in Sources */,
+				DAB596E61FD98F3E0058B27D /* Resnet50.mlmodel in Sources */,
+				DAB596E21FD97F350058B27D /* MNISTClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +291,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L9XL5HW2NB;
+				COREML_CODEGEN_LANGUAGE = Swift;
+				DEVELOPMENT_TEAM = WN88JXG7EP;
 				INFOPLIST_FILE = SmartCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SmartCamera;
@@ -294,7 +307,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L9XL5HW2NB;
+				COREML_CODEGEN_LANGUAGE = Swift;
+				DEVELOPMENT_TEAM = WN88JXG7EP;
 				INFOPLIST_FILE = SmartCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SmartCamera;
